@@ -2,21 +2,24 @@ let doorImage1 = document.getElementById("door1");
 let doorImage2 = document.getElementById("door2");
 let doorImage3 = document.getElementById("door3");
 let startButton = document.getElementById("start");
+let scoreNumber = document.getElementById("score-number");
+let highScoreNumber = document.getElementById("high-score-number");
 let botDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/robot.svg";
 
 let beachDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/beach.svg";
 
 let spaceDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/space.svg";
 let closedDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg";
-let numClosedDoors = 3; 
+let numClosedDoors = 3;
 let openDoor1;
 let openDoor2;
 let openDoor3;
 let currentlyPlaying = true;
+let score = 0;
 
 const isBot = (door) => {
   if (door.src === botDoorPath){
-    return true;  
+    return true;
   } else {
     return false;
   };
@@ -24,7 +27,7 @@ const isBot = (door) => {
 
 const isClicked = (door) => {
   if (door.src === closedDoorPath){
-    return false;  
+    return false;
   }else{
     return true;
   };
@@ -60,7 +63,7 @@ doorImage1.onclick = () => {
   if(currentlyPlaying && !isClicked(doorImage1)){
   doorImage1.src = openDoor1;
   playDoor(doorImage1);
-  } 
+  }
 };
 doorImage2.onclick = () => {
    if(currentlyPlaying && !isClicked(doorImage2)){

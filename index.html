@@ -14,7 +14,7 @@
       <p class="instructions-title">Instructions</p>
       <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/star.svg">
     </div>
-    
+
     <table class="instructions-row">
        <tr>
          <td class="instructions-number">1</td>
@@ -33,16 +33,23 @@
          <td class="instructions-text">See if you can score a winning streak!</td>
       </tr>
     </table>
-    
+
            <div class="door-row">
       <img id="door1" class="door-frame" src='https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg'>
        <img id="door2" class="door-frame" src='https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg'>
        <img id="door3" class="door-frame" src='https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg'>
     </div>
-    
-    <div id="start" class="start-row">Good luck!
+
+    <div id="start" class="start-row">Good Luck
     </div>
-    
-    <script type="text/javascript" src="./resources/js/main.js"></script> 
+    <div class="score-row">
+
+        <span class="score-text">Current streak:</span>
+        <span class="score-box" id="score-number"></span>
+        <span class="score-text">Best streak:</span>
+        <span class="score-box" id="high-score-number"></span>
+
+      </div>
+    <script type="text/javascript" src="./resources/js/main.js"></script>
   </body>
 </html>
