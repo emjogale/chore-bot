@@ -16,6 +16,8 @@ let openDoor2;
 let openDoor3;
 let currentlyPlaying = true;
 let score = 0;
+let runningTotal = 0;
+let topScore = 0;
 
 const isBot = (door) => {
   if (door.src === botDoorPath){
@@ -97,8 +99,15 @@ const startRound = () => {
 const gameOver = (status) => {
   if(status == "win"){
     startButton.innerHTML = "You win! Play again?";
+    scoreNumber.innerHTML =  runningTotal +=1;
+    if(runningTotal > topScore){
+      topScore = runningTotal;
+      highScoreNumber.innerHTML = topScore};
   } else {
     startButton.innerHTML = "Game Over! Play again?";
+    scoreNumber.innerHTML = 0;
+    highScoreNumber.innerHTML = topScore;
+    runningTotal = 0;
   }
   currentlyPlaying = false;
 };

@@ -8,12 +8,12 @@ header {
   text-align: center;
 }
 
-/*div, th, tr, td {
+div, th, tr, td {
   border: black 1px solid;
-}*/
+}
 
 .title-row {
-  margin-top: 42px;
+  margin-top: 40px;
   margin-bottom: 21px;
   text-align: center;
 }
@@ -44,7 +44,7 @@ header {
   color: #00ffff;
 }
 
-.door-row, .score-text {
+.door-row {
   text-align: center;
 }
 
@@ -59,11 +59,11 @@ header {
 }
 .start-row {
   margin: auto;
-  width: 120px;
-  height: 43px;
+  width: 200px;
+  height: 35px;
   font-family: "Work Sans";
   background-color: #eb6536;
-  padding-top: 18px;
+  padding-top: 9px;
   font-size: 18px;
   text-align: center;
   color: #010165;
@@ -72,8 +72,9 @@ header {
 }
 
 .score-row {
+
   margin: auto;
-  width: 180px;
+  width: 400px;
   height: 43px;
 }
 
@@ -85,6 +86,12 @@ header {
   font-size: 16px;
   letter-spacing: 1.1px;
   color: #ffffff;
+}
+
+.score-box {
+  background-color: #00ffff;
+  padding: 0 15px;
+  font-weight: bold;
 }
 
 /*th {
