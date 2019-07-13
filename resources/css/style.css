@@ -8,9 +8,9 @@ header {
   text-align: center;
 }
 
-div, th, tr, td {
+/*div, th, tr, td {
   border: black 1px solid;
-}
+}*/
 
 .title-row {
   margin-top: 40px;
@@ -59,7 +59,7 @@ div, th, tr, td {
 }
 .start-row {
   margin: auto;
-  width: 200px;
+  width: 250px;
   height: 35px;
   font-family: "Work Sans";
   background-color: #eb6536;
