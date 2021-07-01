@@ -1,11 +1,23 @@
 body {
-  background-color: #010165;
-  margin: 0px;
+	background-color: #010165;
+	margin: 0px;
 }
 
+main {
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 header {
-  background-color: #00ffff;
-  text-align: center;
+	background-color: #00ffff;
+	text-align: center;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+h1 {
+	padding: 2rem;
 }
 
 /*div, th, tr, td {
@@ -13,85 +25,91 @@ header {
 }*/
 
 .title-row {
-  margin-top: 40px;
-  margin-bottom: 21px;
-  text-align: center;
+	margin-top: 40px;
+	margin-bottom: 21px;
+	text-align: center;
 }
 
 .instructions-title {
-  display: inline;
-  font-size: 18px;
-  color: #00ffff;
-  font-family: "Work Sans";
+	display: inline;
+	font-size: 18px;
+	color: #00ffff;
+	font-family: "Work Sans";
 }
 
-.instructions-row, .score-row {
-  margin: 0 auto;
-  width: 400px;
+.instructions-row,
+.score-row {
+	margin: 0 auto;
+	width: 400px;
 }
 
 .instructions-number {
-  padding-right: 25px;
-  font-family: "Work Sans";
-  font-size: 36px;
-  color: #00ffff;
+	padding-right: 25px;
+	font-family: "Work Sans";
+	font-size: 36px;
+	color: #00ffff;
 }
 
 .instructions-text {
-  padding: 10px;
-  font-family: "Work Sans";
-  font-size: 14px;
-  color: #00ffff;
+	padding: 10px;
+	font-family: "Work Sans";
+	font-size: 14px;
+	color: #00ffff;
 }
 
 .door-row {
-  text-align: center;
+	text-align: center;
+	background-image: url("../images/Cute-Monster.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	padding: 2rem;
+	flex: 1.5 0 auto;
+	margin-top: 1rem;
 }
 
 .door-frame {
-  cursor: pointer;
-  padding: 10px;
-}
-
-.score-text: {
-  margin: auto;
-
-}
-.start-row {
-  margin: auto;
-  width: 250px;
-  height: 35px;
-  font-family: "Work Sans";
-  background-color: #eb6536;
-  padding-top: 9px;
-  font-size: 18px;
-  text-align: center;
-  color: #010165;
-  margin-bottom: 21px;
-  cursor: pointer;
-}
-
-.score-row {
-
-  margin: auto;
-  width: 400px;
-  height: 43px;
+	cursor: pointer;
+	padding: 10px;
 }
 
 .score-text {
-  margin-right: 17px;
-  padding: 5px;
-  display: inline;
-  font-family: 'Work Sans';
-  font-size: 16px;
-  letter-spacing: 1.1px;
-  color: #ffffff;
+	margin: auto;
+}
+.start-row {
+	margin: auto;
+	width: 250px;
+	height: 35px;
+	font-family: "Work Sans";
+	background-color: #eb6536;
+	padding-top: 9px;
+	font-size: 18px;
+	text-align: center;
+	color: #010165;
+	margin-top: 3rem;
+	margin-bottom: 21px;
+	cursor: pointer;
+}
+
+.score-row {
+	margin: auto;
+	width: 400px;
+	height: 43px;
+}
+
+.score-text {
+	margin-right: 17px;
+	padding: 5px;
+	display: inline;
+	font-family: "Work Sans";
+	font-size: 16px;
+	letter-spacing: 1.1px;
+	color: #ffffff;
 }
 
 .score-box {
-  background-color: #00ffff;
-  padding: 0 15px;
-  font-weight: bold;
+	background-color: #00ffff;
+	padding: 0 15px;
+	font-weight: bold;
 }
 
 /*th {
